@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Prueba tecnica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El proyeco consiste en el cosumo de APIs de [Last.fm](https://www.last.fm/api/show/track.search), en un input se introduce una palabra clave con la cual se realizara tres querys: albums, canciones y artistas, por defecto el limite esta establecido en 5 items por endpoint.
 
-Currently, two official plugins are available:
+### Tecnologías
+- Vite
+- Node
+- React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Antes de comenzar
 
-## Expanding the ESLint configuration
+#### Es necesario tener instalado:
+- Node
+- Vite
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#### API key
+Es necesario contar con una apikey de [Last.fm](https://www.last.fm/)
 
-- Configure the top-level `parserOptions` property like this:
+### Pasos de instalación
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+#### 1.Instalar proyecto:
+
+```
+npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### 2.Ejecutar proyecto:
+
+```
+npm run dev
+```
+
